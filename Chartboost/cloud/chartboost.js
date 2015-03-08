@@ -1,11 +1,12 @@
+var chartboostAppId = config.get("chartboostAppId")
+var chartboostAppSignature = config.get("chartboostAppSignature")
+
 var getChartboostConfig = function() {
-	var chartboostAppIdKey = "chartboostAppId"; 
-	var chartboostAppSignatureKey = "chartboostAppSignature";
 	Parse.Config.get().then(function(config) {
-		console.debug("getting config chartboost app id =" + config.get(chartboostAppIdKey));
-		console.debug("getting config chartboost app signature =" + config.get(chartboostAppSignatureKey));
+		console.debug("config chartboost app id =" + chartboostAppId);
+		console.debug("config chartboost app signature =" + chartboostAppSignature);
 	}).then(function() {
-		return { "chartboostAppId" : config.get(chartboostAppIdKey), "chartboostAppSignatureKey" : config.get(chartboostAppSignatureKey)}
+		return { "chartboostAppId" : chartboostAppId, "chartboostAppSignatureKey" : chartboostAppSignature}
 	}, function(error) {
 		console.error(error);
 		return null;
