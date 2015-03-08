@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Chartboost API": {
+            "applicationId": "k2qXc1KuqjqwMw8jdutPyTfXcgiGvXeYvNXmSUwB", 
+            "masterKey": "ixzt5VrQ2dgbyjTSjOHCgSttQiP3aifO9IQxRyZv"
+        }, 
+        "_default": {
+            "link": "Chartboost API"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.5"
+    }
+}
